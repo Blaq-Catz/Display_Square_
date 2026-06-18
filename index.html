@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Square | Premium Visual Merchandising</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="brand-container">
+            <img src="/Images/DISPLAY SQUARE LOGO 4 (1)3.png" alt="Display Square Logo" class="custom-logo">
+            <div class="logo">DISPLAY SQUARE</div>
+        </a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active-link">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="slide-content">
+                    <span class="eyebrow">Visual Merchandising • Premium Displays</span>
+                    <h1>Global Standard Craftsmanship</h1>
+                    <p>Locally designed and built in Nigeria 🇳🇬. Elevating brands through world-class signages.</p>
+                    <a href="portfolio.html" class="btn">View Portfolio</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="slide-content">
+                    <span class="eyebrow">Locally Built 🇳🇬</span>
+                    <h1>Premium Signages</h1>
+                    <p>Immersive visual merchandising crafted for high-end retail and corporate spaces.</p>
+                    <a href="services.html" class="btn">Discover Capabilities</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="slide-content">
+                    <span class="eyebrow">Next-Gen Integration</span>
+                    <h1>Corporate Wayfinding</h1>
+                    <p>Seamless navigation and environmental graphics for modern headquarters.</p>
+                    <a href="about.html" class="btn">Our Philosophy</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section class="what-we-do reveal">
+        <div class="section-heading">
+            <h2>What We Do</h2>
+            <p>We offer a wide range of professional world-class services.</p>
+        </div>
+        <div class="services-preview-grid">
+            <div class="service-preview-card">
+                <h3>Premium Displays</h3>
+                <p>Immersive bespoke fixtures and retail environments designed for flagship boutiques.</p>
+                <a href="services.html" class="text-link">Explore Service &#8594;</a>
+            </div>
+            <div class="service-preview-card">
+                <h3>Architectural Signage</h3>
+                <p>Monument signs, exterior lettering, and structural pylons that command attention.</p>
+                <a href="services.html" class="text-link">Explore Service &#8594;</a>
+            </div>
+            <div class="service-preview-card">
+                <h3>Corporate Wayfinding</h3>
+                <p>Minimalist directories and intuitive navigation for large corporate campuses.</p>
+                <a href="services.html" class="text-link">Explore Service &#8594;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-we-do-it reveal">
+        <div class="section-heading">
+            <h2>How We Do It</h2>
+            <p>At the core of our ethos lies the remarkable ability to craft dreams into reality.</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h3>Concept Development</h3>
+                <h4>We breathe life into your Aspirations!</h4>
+                <p>The first stage of our imaginative designs. From the faintest spark of an idea to the full-blown fire of innovation.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h3>Design & Visualization</h3>
+                <h4>The ideas take shape with limitless Creativity!</h4>
+                <p>Here, design is not just a step; it’s a symphony of your desires, orchestrated flawlessly.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h3>Production</h3>
+                <h4>Transforming Dreams into Tangible Wonders!</h4>
+                <p>From steel to structure, from concept to creation, we engineer dreams into existence that puts a smile on our clients’ faces.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h3>Create Happiness!</h3>
+                <h4>Unveiling the Extraordinary!</h4>
+                <p>The spaces we craft aren’t just structures; they are experiences. We don’t just meet expectations; we exceed them.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials reveal">
+        <div class="section-heading">
+            <h2>Client Voices</h2>
+            <p>Global standard craftsmanship, recognized by industry leaders.</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="quote">"Display Square completely transformed our flagship storefront. The precision of the architectural lighting is nothing short of breathtaking. They truly exceeded our expectations."</p>
+                <div class="client-info">
+                    <h5>Sarah Jenkins</h5>
+                    <span>Creative Director, Aura Luxury</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"From the initial concept visualization to the final steel installation, the team was flawless. They didn't just build a sign; they engineered a landmark for our headquarters."</p>
+                <div class="client-info">
+                    <h5>Marcus Thorne</h5>
+                    <span>Operations Lead, Nexus Group</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-section reveal">
+        <h2>Trusted by Global Innovators</h2>
+        <div class="client-logos">
+            <h3 class="logo-item">AURA LUXURY</h3>
+            <h3 class="logo-item">STUDIO V</h3>
+            <h3 class="logo-item">MAISON</h3>
+            <h3 class="logo-item">NEXUS</h3>
+            <h3 class="logo-item">NOVA RETAIL</h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container reveal">
+            <div class="footer-col">
+                <div class="brand-container" style="margin-bottom: 1rem;">
+                    <div class="logo" style="color: #ffffff;">DISPLAY SQUARE</div>
+                </div>
+                <p>Locally designed and built in Nigeria. Global standard craftsmanship engineered for unparalleled visual impact.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Expertise</a></li>
+                    <li><a href="portfolio.html">Selected Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Headquarters</h4>
+                <p>123 Design Avenue<br>Creative District, Lagos 🇳🇬</p>
+                <p>Email: studio@displaysquare.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Display Square. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
