@@ -292,21 +292,32 @@ footer { background-color: var(--accent-blue); padding: 5rem 5rem 2rem 5rem; col
         z-index: 1000;
     }
 
+/* The sliding glass mobile menu */
     .nav-links.active {
-        right: 0; /* Slide in */
+        right: 0 !important;
+        /* This is the 'Glass-White' look */
+        background: rgba(255, 255, 255, 0.7) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        opacity: 1 !important;
+        z-index: 9999 !important;
     }
 
+   /* Change the text color to dark so it stands out against the white glass */
     .nav-links a {
-        font-size: 1.5rem;
-        color: #ffffff; /* White text on navy background */
+        color: var(--accent-blue) !important; 
+        font-weight: 700 !important;
     }
-
+    
     .nav-links a:hover, .nav-links a.active-link {
         color: var(--accent-gold);
     }
 
     /* Change hamburger to 'X' and turn it white when menu is open */
-    .menu-toggle.is-active .bar { background-color: #ffffff; }
+    .menu-toggle .bar {
+        background-color: var(--accent-blue) !important;
+    }
     .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
     .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -327,23 +338,4 @@ footer { background-color: var(--accent-blue); padding: 5rem 5rem 2rem 5rem; col
     .about-text, .service-row { padding: 2rem 1.5rem; }
 }
 
-/* --- FIX FOR MOBILE MENU & RESPONSIVENESS --- */
-@media (max-width: 900px) {
-    /* This makes the menu background a solid Navy Blue so it isn't transparent */
-    .nav-links.active {
-        right: 0 !important;
-        background-color: #002244 !important; /* Solid Navy Blue */
-        opacity: 1 !important;
-        z-index: 9999 !important;
-    }
-    
-    /* This ensures the text is visible against the navy background */
-    .nav-links a {
-        color: #ffffff !important;
-    }
 
-    /* This ensures the mobile hamburger icon is always visible */
-    .menu-toggle .bar {
-        background-color: #002244 !important;
-    }
-}
