@@ -326,3 +326,24 @@ footer { background-color: var(--accent-blue); padding: 5rem 5rem 2rem 5rem; col
     .gallery-grid, .services-preview-grid, .process-grid, .testimonial-grid { grid-template-columns: 1fr; }
     .about-text, .service-row { padding: 2rem 1.5rem; }
 }
+
+/* --- FIX FOR MOBILE MENU & RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    /* This makes the menu background a solid Navy Blue so it isn't transparent */
+    .nav-links.active {
+        right: 0 !important;
+        background-color: #002244 !important; /* Solid Navy Blue */
+        opacity: 1 !important;
+        z-index: 9999 !important;
+    }
+    
+    /* This ensures the text is visible against the navy background */
+    .nav-links a {
+        color: #ffffff !important;
+    }
+
+    /* This ensures the mobile hamburger icon is always visible */
+    .menu-toggle .bar {
+        background-color: #002244 !important;
+    }
+}
