@@ -10,9 +10,9 @@
 
     <header class="navbar">
         <a href="index.html" class="brand-container">
-        <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo">
-        <div class="logo">DISPLAY SQUARE</div>
-    </a>
+            <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo">
+            <div class="logo">DISPLAY SQUARE</div>
+        </a>
         
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -20,42 +20,75 @@
             <span class="bar"></span>
         </div>
 
-        <nav>
+        <nav class="nav-center">
             <ul class="nav-links">
+                <li class="close-menu">&times;</li>
+                <li class="mobile-search">
+                    <form action="portfolio.html" method="GET" class="search-form">
+                        <input type="text" name="query" placeholder="Search projects..." class="search-input">
+                        <button type="submit" class="search-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                    </form>
+                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html" class="active-link">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
+
+        <div class="nav-right">
+            <form action="portfolio.html" method="GET" class="search-form">
+                <input type="text" name="query" placeholder="Search projects..." class="search-input">
+                <button type="submit" class="search-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+            </form>
+        </div>
     </header>
 
     <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
         <div class="header-content reveal">
             <h1>Our Capabilities</h1>
-            <p>Visual Merchandising, Premium Displays & Signages.</p>
+            <p>Mastering the intersection of structural engineering and visual art.</p>
         </div>
     </section>
 
-    <section class="services-detail-section">
-        <div class="service-row reveal">
-            <div class="service-text">
-                <h2>Visual Merchandising & Premium Displays</h2>
-                <p>From the storefront facade to the point of sale, we create immersive retail experiences. We specialize in bespoke display fixtures, illuminated brand marks, and modular shelving systems designed specifically for flagship stores.</p>
-            </div>
+    <section class="dark-section reveal">
+        <div class="section-heading">
+            <h2>Core Expertise</h2>
+            <p style="color: #a0b3c6;">Specialized visual merchandising for global innovators.</p>
         </div>
-
-        <div class="service-row reveal">
-            <div class="service-text">
-                <h2>Architectural Signage</h2>
-                <p>We engineer monument signs, exterior building lettering, and structural pylons that integrate flawlessly with modern architecture. Utilizing premium materials and strategic backlighting, our exterior installations command attention.</p>
+        
+        <div class="services-editorial-grid">
+            <div class="services-row">
+                <div class="services-text-col">
+                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">01</span>
+                    <h3>Visual Merchandising & Premium Displays</h3>
+                    <p>From the storefront facade to the point of sale, we create immersive retail experiences. We specialize in bespoke display fixtures, illuminated brand marks, and modular shelving systems designed specifically for flagship stores.</p>
+                </div>
+                <div class="services-img-col">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Retail Display">
+                </div>
             </div>
-        </div>
 
-        <div class="service-row reveal">
-            <div class="service-text">
-                <h2>Corporate Wayfinding</h2>
-                <p>We design comprehensive wayfinding strategies—including minimalist directories, directional plaques, and smart room signage—that guide guests effortlessly while reinforcing your corporate identity with sophisticated styling.</p>
+            <div class="services-row reverse">
+                <div class="services-text-col">
+                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">02</span>
+                    <h3>Architectural Signage</h3>
+                    <p>We engineer monument signs, exterior building lettering, and structural pylons that integrate flawlessly with modern architecture. Utilizing premium materials and strategic backlighting, our exterior installations command attention.</p>
+                </div>
+                <div class="services-img-col">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Architectural Signage">
+                </div>
+            </div>
+
+            <div class="services-row">
+                <div class="services-text-col">
+                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">03</span>
+                    <h3>Corporate Wayfinding</h3>
+                    <p>We design comprehensive wayfinding strategies—including minimalist directories, directional plaques, and smart room signage—that guide guests effortlessly while reinforcing your corporate identity with sophisticated styling.</p>
+                </div>
+                <div class="services-img-col">
+                    <img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wayfinding">
+                </div>
             </div>
         </div>
     </section>
