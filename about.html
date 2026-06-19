@@ -10,34 +10,27 @@
 
     <header class="navbar">
         <a href="index.html" class="brand-container">
-            <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo">
+            <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo" onerror="this.style.display='none'">
             <div class="logo">DISPLAY SQUARE</div>
         </a>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-
+        <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
         <nav class="nav-center">
             <ul class="nav-links">
                 <li class="close-menu">&times;</li>
-                
                 <li class="mobile-search">
                     <form action="portfolio.html" method="GET" class="search-form">
                         <input type="text" name="query" placeholder="Search projects..." class="search-input">
                         <button type="submit" class="search-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
                     </form>
                 </li>
-
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active-link">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
         <div class="nav-right">
             <form action="portfolio.html" method="GET" class="search-form">
                 <input type="text" name="query" placeholder="Search projects..." class="search-input">
@@ -47,16 +40,11 @@
     </header>
 
     <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="header-content reveal">
-            <h1>Our Story</h1>
-            <p>Locally Designed. Globally Recognized.</p>
-        </div>
+        <div class="header-content reveal"><h1>Our Story</h1><p>Locally Designed. Globally Recognized.</p></div>
     </section>
 
     <section class="about-editorial reveal">
-        <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Display Square Workspace">
-        </div>
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Display Square Workspace"></div>
         <div class="about-text">
             <h2>Engineering Meets Art</h2>
             <p>Founded on the principles of precision engineering and uncompromising aesthetic design, Display Square is redefining visual merchandising. We blur the line between structural fabrication and high-end retail artistry.</p>
@@ -78,81 +66,23 @@
     </section>
 
     <section class="team-section dark-section reveal">
-        <div class="section-heading left-align" style="margin-bottom: 4rem;">
-            <h2>The Minds Behind the Craft</h2>
-            <p style="color: #a0b3c6;">Meet the visionaries, engineers, and creatives driving Display Square.</p>
-        </div>
-        
+        <div class="section-heading left-align" style="margin-bottom: 4rem;"><h2>The Minds Behind the Craft</h2><p style="color: #a0b3c6;">Meet the visionaries, engineers, and creatives driving Display Square.</p></div>
         <div class="team-grid">
-            <div class="team-member">
-                <div class="team-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                </div>
-                <div class="team-info">
-                    <h3>Oluwaseun Adeyemi</h3>
-                    <span>Founder & Lead Architect</span>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <div class="team-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                </div>
-                <div class="team-info">
-                    <h3>Sarah Jenkins</h3>
-                    <span>Head of Fabrication</span>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <div class="team-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                </div>
-                <div class="team-info">
-                    <h3>Chukwudi Eze</h3>
-                    <span>Project Director</span>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <div class="team-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                </div>
-                <div class="team-info">
-                    <h3>Elena Rossi</h3>
-                    <span>Creative Strategist</span>
-                </div>
-            </div>
+            <div class="team-member"><div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member"></div><div class="team-info"><h3>Oluwaseun Adeyemi</h3><span>Founder & Lead Architect</span></div></div>
+            <div class="team-member"><div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member"></div><div class="team-info"><h3>Sarah Jenkins</h3><span>Head of Fabrication</span></div></div>
+            <div class="team-member"><div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member"></div><div class="team-info"><h3>Chukwudi Eze</h3><span>Project Director</span></div></div>
+            <div class="team-member"><div class="team-img-wrapper"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team Member"></div><div class="team-info"><h3>Elena Rossi</h3><span>Creative Strategist</span></div></div>
         </div>
     </section>
 
     <footer>
         <div class="footer-container reveal">
-            <div class="footer-col">
-                <div class="brand-container" style="margin-bottom: 1rem;">
-                    <div class="logo" style="color: #ffffff;">DISPLAY SQUARE</div>
-                </div>
-                <p>Locally designed and built in Nigeria. Global standard craftsmanship engineered for unparalleled visual impact.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Expertise</a></li>
-                    <li><a href="portfolio.html">Selected Works</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Headquarters</h4>
-                <p>123 Design Avenue<br>Creative District, Lagos 🇳🇬</p>
-                <p>Email: studio@displaysquare.com</p>
-            </div>
+            <div class="footer-col"><div class="brand-container" style="margin-bottom: 1rem;"><div class="logo" style="color: #ffffff;">DISPLAY SQUARE</div></div><p>Locally designed and built in Nigeria. Global standard craftsmanship engineered for unparalleled visual impact.</p></div>
+            <div class="footer-col"><h4>Navigation</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Expertise</a></li><li><a href="portfolio.html">Selected Works</a></li></ul></div>
+            <div class="footer-col"><h4>Headquarters</h4><p>123 Design Avenue<br>Creative District, Lagos 🇳🇬</p><p>Email: studio@displaysquare.com</p></div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Display Square. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Display Square. All rights reserved.</p></div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

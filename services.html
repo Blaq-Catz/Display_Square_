@@ -10,16 +10,10 @@
 
     <header class="navbar">
         <a href="index.html" class="brand-container">
-            <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo">
+            <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo" onerror="this.style.display='none'">
             <div class="logo">DISPLAY SQUARE</div>
         </a>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-
+        <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
         <nav class="nav-center">
             <ul class="nav-links">
                 <li class="close-menu">&times;</li>
@@ -33,9 +27,10 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html" class="active-link">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
         <div class="nav-right">
             <form action="portfolio.html" method="GET" class="search-form">
                 <input type="text" name="query" placeholder="Search projects..." class="search-input">
@@ -45,81 +40,35 @@
     </header>
 
     <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="header-content reveal">
-            <h1>Our Capabilities</h1>
-            <p>Mastering the intersection of structural engineering and visual art.</p>
-        </div>
+        <div class="header-content reveal"><h1>Our Capabilities</h1><p>Mastering the intersection of structural engineering and visual art.</p></div>
     </section>
 
     <section class="dark-section reveal">
-        <div class="section-heading">
-            <h2>Core Expertise</h2>
-            <p style="color: #a0b3c6;">Specialized visual merchandising for global innovators.</p>
-        </div>
-        
+        <div class="section-heading"><h2>Core Expertise</h2><p style="color: #a0b3c6;">Specialized visual merchandising for global innovators.</p></div>
         <div class="services-editorial-grid">
             <div class="services-row">
-                <div class="services-text-col">
-                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">01</span>
-                    <h3>Visual Merchandising & Premium Displays</h3>
-                    <p>From the storefront facade to the point of sale, we create immersive retail experiences. We specialize in bespoke display fixtures, illuminated brand marks, and modular shelving systems designed specifically for flagship stores.</p>
-                </div>
-                <div class="services-img-col">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Retail Display">
-                </div>
+                <div class="services-text-col"><span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">01</span><h3>Visual Merchandising & Premium Displays</h3><p>From the storefront facade to the point of sale, we create immersive retail experiences. We specialize in bespoke display fixtures, illuminated brand marks, and modular shelving systems designed specifically for flagship stores.</p></div>
+                <div class="services-img-col"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Retail Display"></div>
             </div>
-
             <div class="services-row reverse">
-                <div class="services-text-col">
-                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">02</span>
-                    <h3>Architectural Signage</h3>
-                    <p>We engineer monument signs, exterior building lettering, and structural pylons that integrate flawlessly with modern architecture. Utilizing premium materials and strategic backlighting, our exterior installations command attention.</p>
-                </div>
-                <div class="services-img-col">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Architectural Signage">
-                </div>
+                <div class="services-text-col"><span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">02</span><h3>Architectural Signage</h3><p>We engineer monument signs, exterior building lettering, and structural pylons that integrate flawlessly with modern architecture. Utilizing premium materials and strategic backlighting, our exterior installations command attention.</p></div>
+                <div class="services-img-col"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Architectural Signage"></div>
             </div>
-
             <div class="services-row">
-                <div class="services-text-col">
-                    <span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">03</span>
-                    <h3>Corporate Wayfinding</h3>
-                    <p>We design comprehensive wayfinding strategies—including minimalist directories, directional plaques, and smart room signage—that guide guests effortlessly while reinforcing your corporate identity with sophisticated styling.</p>
-                </div>
-                <div class="services-img-col">
-                    <img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wayfinding">
-                </div>
+                <div class="services-text-col"><span class="eyebrow" style="margin-bottom: 0.5rem; display: block;">03</span><h3>Corporate Wayfinding</h3><p>We design comprehensive wayfinding strategies—including minimalist directories, directional plaques, and smart room signage—that guide guests effortlessly while reinforcing your corporate identity with sophisticated styling.</p></div>
+                <div class="services-img-col"><img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wayfinding"></div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-container reveal">
-            <div class="footer-col">
-                <div class="brand-container" style="margin-bottom: 1rem;">
-                    <div class="logo" style="color: #ffffff;">DISPLAY SQUARE</div>
-                </div>
-                <p>Locally designed and built in Nigeria. Global standard craftsmanship engineered for unparalleled visual impact.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Expertise</a></li>
-                    <li><a href="portfolio.html">Selected Works</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Headquarters</h4>
-                <p>123 Design Avenue<br>Creative District, Lagos 🇳🇬</p>
-                <p>Email: studio@displaysquare.com</p>
-            </div>
+            <div class="footer-col"><div class="brand-container" style="margin-bottom: 1rem;"><div class="logo" style="color: #ffffff;">DISPLAY SQUARE</div></div><p>Locally designed and built in Nigeria. Global standard craftsmanship engineered for unparalleled visual impact.</p></div>
+            <div class="footer-col"><h4>Navigation</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Expertise</a></li><li><a href="portfolio.html">Selected Works</a></li></ul></div>
+            <div class="footer-col"><h4>Headquarters</h4><p>123 Design Avenue<br>Creative District, Lagos 🇳🇬</p><p>Email: studio@displaysquare.com</p></div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Display Square. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Display Square. All rights reserved.</p></div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Display Square</title>
+    <title>Contact Us | Display Square</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,9 +26,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html" class="active-link">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active-link">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-right">
@@ -39,26 +39,42 @@
         </div>
     </header>
 
-    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1567449303078-57ad995bd3fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="header-content reveal" id="portfolio-header">
-            <h1>Selected Works</h1>
-            <p>A curated gallery of our finest visual merchandising installations.</p>
-        </div>
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="header-content reveal"><h1>Start a Conversation</h1><p>Let’s engineer your next iconic visual experience.</p></div>
     </section>
 
-    <section class="portfolio-gallery">
-        <div id="no-results" style="display: none; text-align: center; padding: 4rem 0;">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--accent-blue);">No projects found.</h2>
-            <p style="color: var(--text-muted); margin-top: 1rem;">Try searching for "Aura", "Wayfinding", or "Signage".</p>
-        </div>
-
-        <div class="gallery-grid" id="portfolio-grid">
-            <div class="gallery-item reveal project-card"><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Retail"><div class="item-overlay"><h3>Aura Flagship</h3><p>Premium Displays</p></div></div>
-            <div class="gallery-item reveal project-card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Neon Install"><div class="item-overlay"><h3>Studio V Interiors</h3><p>Custom Signage</p></div></div>
-            <div class="gallery-item reveal project-card"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wayfinding"><div class="item-overlay"><h3>Nexus Headquarters</h3><p>Modular Wayfinding</p></div></div>
-            <div class="gallery-item reveal project-card"><img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Display"><div class="item-overlay"><h3>Elevate Boutique</h3><p>Visual Merchandising</p></div></div>
-            <div class="gallery-item reveal project-card"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pylon"><div class="item-overlay"><h3>Nova Retail Park</h3><p>Architectural Signage</p></div></div>
-            <div class="gallery-item reveal project-card"><img src="https://images.unsplash.com/photo-1511289081-d06dda19034d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Logo"><div class="item-overlay"><h3>Maison Gallery</h3><p>Illumination Design</p></div></div>
+    <section class="contact-section dark-section reveal">
+        <div class="contact-split">
+            <div class="contact-info-panel">
+                <h2>Get in Touch</h2>
+                <p>Whether you're looking to completely redesign your flagship retail experience, or require global-standard structural signages, our team is ready to build it.</p>
+                <div class="contact-details">
+                    <div class="detail-item"><span class="detail-label">Headquarters</span><p>123 Design Avenue,<br>Creative District, Lagos 🇳🇬</p></div>
+                    <div class="detail-item"><span class="detail-label">Direct Line</span><p>+234 (0) 800 DISPLAY<br>+234 (0) 812 345 6789</p></div>
+                    <div class="detail-item"><span class="detail-label">Digital Inquiry</span><p>studio@displaysquare.com<br>projects@displaysquare.com</p></div>
+                </div>
+            </div>
+            <div class="contact-form-panel">
+                <form action="#" method="POST" class="glass-form">
+                    <div class="form-row">
+                        <div class="form-group"><label>First Name</label><input type="text" placeholder="John" required></div>
+                        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe" required></div>
+                    </div>
+                    <div class="form-group"><label>Corporate Email</label><input type="email" placeholder="john@company.com" required></div>
+                    <div class="form-group">
+                        <label>Project Type</label>
+                        <select required>
+                            <option value="">Select an option...</option>
+                            <option value="retail">Visual Merchandising & Retail</option>
+                            <option value="architectural">Architectural Signage</option>
+                            <option value="wayfinding">Corporate Wayfinding</option>
+                            <option value="other">Other / Custom</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Project Details</label><textarea rows="4" placeholder="Tell us about your vision..." required></textarea></div>
+                    <button type="submit" class="btn" style="width: 100%; border-radius: 8px;">Submit Inquiry</button>
+                </form>
+            </div>
         </div>
     </section>
 
