@@ -9,64 +9,98 @@
 <body>
 
     <header class="navbar">
-       <a href="index.html" class="brand-container">
-        <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo">
-        <div class="logo">DISPLAY SQUARE</div>
-    </a>
+        <a href="index.html" class="brand-container">
+            <img src="Images/logo.png" alt="Display Square Logo" class="custom-logo">
+            <div class="logo">DISPLAY SQUARE</div>
+        </a>
+        
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <nav>
+        <nav class="nav-center">
             <ul class="nav-links">
+                <li class="close-menu">&times;</li>
+                <li class="mobile-search">
+                    <form action="portfolio.html" method="GET" class="search-form">
+                        <input type="text" name="query" placeholder="Search projects..." class="search-input">
+                        <button type="submit" class="search-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                    </form>
+                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html" class="active-link">Portfolio</a></li>
             </ul>
         </nav>
+
+        <div class="nav-right">
+            <form action="portfolio.html" method="GET" class="search-form">
+                <input type="text" name="query" placeholder="Search projects..." class="search-input">
+                <button type="submit" class="search-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+            </form>
+        </div>
     </header>
 
     <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1567449303078-57ad995bd3fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="header-content reveal">
+        <div class="header-content reveal" id="portfolio-header">
             <h1>Selected Works</h1>
             <p>A curated gallery of our finest visual merchandising installations.</p>
         </div>
     </section>
 
     <section class="portfolio-gallery">
-        <div class="gallery-grid">
-            <div class="gallery-item reveal">
+        <div id="no-results" style="display: none; text-align: center; padding: 4rem 0;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--accent-blue);">No projects found.</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem;">Try searching for "Aura", "Wayfinding", or "Signage".</p>
+        </div>
+
+        <div class="gallery-grid" id="portfolio-grid">
+            <div class="gallery-item reveal project-card">
                 <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Retail Facade">
                 <div class="item-overlay">
                     <h3>Aura Flagship</h3>
                     <p>Premium Displays</p>
                 </div>
             </div>
-            <div class="gallery-item reveal">
+            <div class="gallery-item reveal project-card">
                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Neon Installation">
                 <div class="item-overlay">
                     <h3>Studio V Interiors</h3>
                     <p>Custom Signage</p>
                 </div>
             </div>
-            <div class="gallery-item reveal">
+            <div class="gallery-item reveal project-card">
                 <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Wayfinding">
                 <div class="item-overlay">
                     <h3>Nexus Headquarters</h3>
-                    <p>Modular Wayfinding System</p>
+                    <p>Modular Wayfinding</p>
                 </div>
             </div>
-             <div class="gallery-item reveal">
+             <div class="gallery-item reveal project-card">
                 <img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Display">
                 <div class="item-overlay">
                     <h3>Elevate Boutique</h3>
                     <p>Visual Merchandising</p>
                 </div>
             </div>
-        </div>
+            <div class="gallery-item reveal project-card">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Structural Pylon">
+                <div class="item-overlay">
+                    <h3>Nova Retail Park</h3>
+                    <p>Architectural Signage</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal project-card">
+                <img src="https://images.unsplash.com/photo-1511289081-d06dda19034d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Illuminated Logo">
+                <div class="item-overlay">
+                    <h3>Maison Gallery</h3>
+                    <p>Illumination Design</p>
+                </div>
+            </div>
+        </div>  
     </section>
 
     <footer>
