@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insights & Journal | Display Square</title>
+    <title>Technical Insights & Whitepapers | Display Square</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,10 +16,10 @@
         <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
         <nav class="nav-center">
             <ul class="nav-links">
-                <li class="close-menu">&times;</li>
+                <li class="close-menu-li"><button class="close-menu" aria-label="Close menu">&times;</button></li>
                 <li class="mobile-search">
                     <form action="portfolio.html" method="GET" class="search-form">
-                        <input type="text" name="query" placeholder="Search projects..." class="search-input">
+                        <input type="text" name="query" placeholder="Search capabilities..." class="search-input">
                         <button type="submit" class="search-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
                     </form>
                 </li>
@@ -27,60 +27,63 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html" class="active-link">Blog</a></li>
+                <li><a href="blog.html" class="active-link">Insights</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-right">
             <form action="portfolio.html" method="GET" class="search-form">
-                <input type="text" name="query" placeholder="Search projects..." class="search-input">
+                <input type="text" name="query" placeholder="Search capabilities..." class="search-input">
                 <button type="submit" class="search-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
             </form>
         </div>
     </header>
 
     <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="header-content reveal"><h1>Insights & Journal</h1><p>Exploring the intersection of design, engineering, and visual merchandising.</p></div>
+        <div class="header-content reveal">
+            <h1>Technical Insights & Journal</h1>
+            <p>Engineering whitepapers for commercial facility planners.</p>
+        </div>
     </section>
 
     <section class="dark-section reveal">
-        <div class="section-heading left-align"><h2>Featured Story</h2></div>
+        <div class="section-heading left-align"><h2>Featured Technical Publication</h2></div>
         <div class="featured-blog-split">
-            <div class="featured-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Featured Post"></div>
+            <div class="featured-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Whitepaper"></div>
             <div class="featured-content">
-                <span class="blog-meta">Architecture • March 12, 2026</span>
-                <h3>The Future of Flagship Retail: Blurring Digital and Physical Spaces</h3>
-                <p>How premium brands are utilizing structural signages and immersive visual merchandising to create unforgettable in-store experiences that rival their digital counterparts...</p>
-                <a href="#" class="view-all-link" style="margin-top: 2rem;">Read Full Article <span class="arrow">&rarr;</span></a>
+                <span class="blog-meta">ENGINEERING • MARCH 12, 2026</span>
+                <h3>The Future of Flagship Retail: Blurring Digital and Physical Environments at Scale</h3>
+                <p>How corporate real estate directors are utilizing integrated structural signages, digital outdoor LED displays, and modular visual merchandising to achieve uncompromised branch uniformity across ECOWAS territories...</p>
+                <a href="#" class="btn" style="margin-top: 2rem;">Download Full PDF Whitepaper</a>
             </div>
         </div>
     </section>
 
     <section class="blog-grid-section reveal">
-        <div class="section-heading"><h2 style="color: var(--accent-blue);">Recent Publications</h2></div>
+        <div class="section-heading"><span class="eyebrow" style="margin-bottom: 1rem;">KNOWLEDGE BASE</span><h2 style="color: var(--accent-blue);">Recent Engineering Bulletins</h2></div>
         <div class="blog-grid">
             <div class="blog-card">
-                <div class="blog-img-wrapper"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog Post"></div>
-                <div class="blog-text"><span class="blog-meta">Illumination • Feb 28, 2026</span><h4>Mastering Architectural Neon Layouts</h4><p>Discover the engineering behind seamless exterior light integration.</p><a href="#" class="view-all-link" style="font-size: 0.8rem;">Read More</a></div>
+                <div class="blog-img-wrapper"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Neon"></div>
+                <div class="blog-text"><span class="blog-meta" style="color: var(--accent-blue);">COMPLIANCE • FEB 28, 2026</span><h4>Mastering Architectural Faux-Neon Layouts</h4><p>Preventing thermal heat sink buildup in interior joinery installations.</p><a href="#" class="btn">Read Technical Brief</a></div>
             </div>
             <div class="blog-card">
-                <div class="blog-img-wrapper"><img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog Post"></div>
-                <div class="blog-text"><span class="blog-meta">Wayfinding • Feb 15, 2026</span><h4>Navigating the Corporate Campus</h4><p>Why minimalist directories are the new global standard for HQs.</p><a href="#" class="view-all-link" style="font-size: 0.8rem;">Read More</a></div>
+                <div class="blog-img-wrapper"><img src="https://images.unsplash.com/photo-1541888079213-718e2beab88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wayfinding"></div>
+                <div class="blog-text"><span class="blog-meta" style="color: var(--accent-blue);">WAYFINDING • FEB 15, 2026</span><h4>Calculating Wind Shear for Exterior Pylons</h4><p>Geotechnical soil considerations for 10m+ campus monument markers.</p><a href="#" class="btn">Read Technical Brief</a></div>
             </div>
             <div class="blog-card">
-                <div class="blog-img-wrapper"><img src="https://images.unsplash.com/photo-1511289081-d06dda19034d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blog Post"></div>
-                <div class="blog-text"><span class="blog-meta">Materials • Jan 30, 2026</span><h4>Steel vs. Acrylic in Fabrication</h4><p>An in-depth look at material selection for high-end bespoke displays.</p><a href="#" class="view-all-link" style="font-size: 0.8rem;">Read More</a></div>
+                <div class="blog-img-wrapper"><img src="https://images.unsplash.com/photo-1511289081-d06dda19034d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Materials"></div>
+                <div class="blog-text"><span class="blog-meta" style="color: var(--accent-blue);">MATERIALS • JAN 30, 2026</span><h4>Cast Acrylics vs. Extruded in Tropical Sun</h4><p>An empirical audit of UV yellowing degradation in coastal West Africa.</p><a href="#" class="btn">Read Technical Brief</a></div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-container reveal">
-            <div class="footer-col"><div class="brand-container" style="margin-bottom: 1rem;"><div class="logo" style="color: #ffffff;">DISPLAY SQUARE</div></div><p>Locally designed and built in Nigeria. Global standard craftsmanship engineered for unparalleled visual impact.</p></div>
-            <div class="footer-col"><h4>Navigation</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Expertise</a></li><li><a href="portfolio.html">Selected Works</a></li></ul></div>
-            <div class="footer-col"><h4>Headquarters</h4><p>123 Design Avenue<br>Creative District, Lagos 🇳🇬</p><p>Email: studio@displaysquare.com</p></div>
+            <div class="footer-col"><div class="brand-container" style="margin-bottom: 1rem;"><div class="logo">DISPLAY SQUARE</div></div><p>Locally engineered and built in Nigeria 🇳🇬. Global standard commercial craftsmanship engineered for uncompromised structural impact across Africa.</p></div>
+            <div class="footer-col"><h4>Commercial Matrix</h4><ul><li><a href="about.html">Manufacturing Plant</a></li><li><a href="services.html">Solution Architectures</a></li><li><a href="portfolio.html">Execution Case Studies</a></li><li><a href="blog.html">Technical Insights</a></li></ul></div>
+            <div class="footer-col"><h4>Procurement Desk</h4><p style="color: #ffffff;">123 Design Avenue,<br>Industrial Zone, Creative District, Lagos.</p><p style="margin-top: 1rem;">Direct: +234 (0) 800 DISPLAY<br>Inquiries: studio@displaysquare.com</p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2026 Display Square. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; 2026 Display Square Ltd. All rights reserved.</p></div>
     </footer>
     <script src="script.js"></script>
 </body>
